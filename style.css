@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  color: #fff;
+
+}
+html,
+body {
+    font-family:gilroy-regular ,  sans-serif;
+  width: 100%;
+  height: 100%;
+}
+.main {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: #000;
+}
+.back {
+  width: 100%;
+  height: 100vh;
+}
+.back img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.top {
+    width: 100%;
+    height: 100vh;
+    z-index: 44;
+    position: absolute;
+    top: 0;
+    pointer-events: none;
+    left: 0;
+}
+.workarea {
+    position: relative;
+    width: 80%;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+/* -------------------------------nAV---------------------------------------------------------- */
+
+.nav {
+    position: absolute;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navleft{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+ 
+}
+.navleft  img {
+ height: 60px;
+}
+.navleft a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    pointer-events: all;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.navright{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+ 
+}
+.navright a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+/* --------------------------------------main content--------------------------------------------------------------------------- */
+
+.hero {
+    position: absolute;
+    top: 60%;
+    left: 0;
+    transform: translate(0% , -50%);
+    justify-content: space-between;
+    width: 100%;
+    display: flex;
+}
+.heroleft {
+    width: 50%;
+}
+.heroright {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+.heroleft .elem h1 {
+    position: absolute;
+    font-family: kajiro;
+    top: 100%;
+    left: 0;
+    font-size :10vw;
+    font-weight: 100;
+    line-height: 0.9;
+}
+.heroleft .elem h1:nth-child(1){
+    top: 0;
+}
+.heroleft .elem {
+    height: 9vw;
+    position: relative;
+     overflow: hidden; 
+}
+.heroleft button {
+    font-size: 3.2vw;
+    font-family: kajiro;
+    color: #000;
+    letter-spacing: 2px;
+padding: 0.5vw 2vw;
+margin-top: 20px;
+pointer-events: all;
+}
+.imgdiv {
+    height: 150px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+ background-image: url('assets/IMG_7566.JPG');
+ background-size: cover;
+
+}
+.heroright p:nth-child(3){
+    margin-bottom: 70px;
+}
+.heroright p {
+    text-align: right;
+    font-weight: 300;
+    font-size: 14px;
+}
